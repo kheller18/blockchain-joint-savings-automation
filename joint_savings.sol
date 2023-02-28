@@ -3,8 +3,6 @@ pragma solidity >=0.7.0 <0.9.0;
 
 // Define a new contract named `JointSavings`
 contract JointSavings {
-    // address payable accountOne = 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb;
-    // address payable accountTwo = 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0;
     address payable accountOne;
     address payable accountTwo;
     address public lastToWithdraw;
@@ -62,7 +60,9 @@ contract JointSavings {
     /*
     Finally, add the **default fallback function** so that your contract can store Ether sent from outside the deposit function.
     */
-    // fallback() external payable {}
-    fallback() external payable {}
+    // receive function for receiving ether
     receive() external payable {}
+
+    // fallback function for receiving ether
+    fallback() external payable {}
 }
