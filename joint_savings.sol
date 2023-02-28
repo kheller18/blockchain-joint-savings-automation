@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.7.0 <0.9.0;
 
-// Define a new contract named `JointSavings`
+// JointSavings contract
 contract JointSavings {
     address payable accountOne;
     address payable accountTwo;
@@ -11,39 +11,31 @@ contract JointSavings {
 
     function withdraw(uint amount, address payable recipient) public {
 
-        /*
-        Define a `require` statement that checks if the `recipient` is equal to either `accountOne` or `accountTwo`. The `requiere` statement returns the text `"You don't own this account!"` if it does not.
-        */
+        // checks to see if recipient is one of two acceptable addresses
         require(recipient == accountOne || recipient == accountTwo, "You don't own this account!");
 
-        /*
-        Define a `require` statement that checks if the `balance` is sufficient to accomplish the withdraw operation. If there are insufficient funds, the text `Insufficient funds!` is returned.
-        */
+        // checks to make sure there's enough ether to withdraw
         require(contractBalance >= amount, "Insufficent Funds!");
 
-        /*
-        Add and `if` statement to check if the `lastToWithdraw` is not equal to (`!=`) to `recipient` If `lastToWithdraw` is not equal, then set it to the current value of `recipient`.
-        */
+        // checks to see if the last to withdraw was the recipient trying to withdraw
         if (lastToWithdraw != recipient) {
             lastToWithdraw = recipient;
         }
 
-        // Call the `transfer` function of the `recipient` and pass it the `amount` to transfer as an argument.
+        // transfers the amount requested
         recipient.transfer(amount);
 
-        // Set  `lastWithdrawAmount` equal to `amount`
+        // sets last withdrawal amount to amount being withdrawn
         lastWithdrawAmount = amount;
 
-        // Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance` to reflect the new balance of the contract.
+        // updates the contract balance
         contractBalance = address(this).balance;
     }
 
-    // Define a `public payable` function named `deposit`.
+    // deposit function
     function deposit() public payable {
 
-        /*
-        Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance`.
-        */
+        // updates contract balance
         contractBalance = address(this).balance;
     }
 
