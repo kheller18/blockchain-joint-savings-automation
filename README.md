@@ -35,8 +35,6 @@ We're able to see from the above images that our first withdrawal works correctl
 At this time, we can verify that all of our functionality is active and working correctly!
 
 
-
-
 ---
 
 ## Table of Contents
@@ -51,12 +49,12 @@ At this time, we can verify that all of our functionality is active and working 
   - [6. Deployment](#6-deployment)
   - [7. Contact](#7-contact)
 
+
 ---
 
 ## 1. Installation
 
   If you would like to clone the repository, type "git clone https://github.com/kheller18/blockchain-joint-savings-automation.git". In the terminal, with the Anaconda dev environment activated, install the following packages and dependencies before running the application. To understand how to install these, refer to the [Usage](#2-usage)
-
 
 
 ---
@@ -116,7 +114,7 @@ At this time, we can verify that all of our functionality is active and working 
 ---
 
 ## 6. Deployment
-  + There is currently no live deployment of this app on a common server. To be able to run this app locally, navigate to the root directory and type "". This should open the app automatically, but if it doesn't, go to [localhost 8501](http://localhost:8501/) in your browser.
+  + There is currently no live deployment of this app on a common server. To be able to run this app, upload the `joint_savings.sol` file to the [Remix IDE](https://remix-project.org/). Next, compile the contract and deploy it. Upon successfully deployal, you will be able to test the functions of the contract.
 
 ---
 
