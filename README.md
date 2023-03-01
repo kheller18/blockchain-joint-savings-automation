@@ -5,7 +5,7 @@
 ---
 
 ## Description
-Blockchain payment app
+This project aims to create a Joint Savings Account using Solidity. We first write the contract that holds the funds. We then provide two addresses, the only two addresses that are able to withdraw from the owning account. The testing of this contract is done using [Remix](https://remix-project.org/).
 
 
 ---
