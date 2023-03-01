@@ -24,9 +24,11 @@ To test our deposit function, we will make three deposits.
 
 We can see from the above images the balance after each deposit. The balance after each of the transactions is 1 Ether, 11 Ether and 16 Ether respectively. Now that our contract address has been deposited 16 Ether in total, we move forward by testing our withdrawal function with our two accounts we've provided. We will do so by making two withdrawals.
   * Transaction 4: Withdraw 5 Ether as Wei to account one.
-  ![withdrawal one](Execution_Results/withdrawal_1.png)
+
+    ![withdrawal one](Execution_Results/withdrawal_1.png)
   * Transaction 5: Withdraw 10 Ether as Wei to account two.
-  ![withdrawal two](Execution_Results/withdrawal_2.png)
+
+    ![withdrawal two](Execution_Results/withdrawal_2.png)
 
 We're able to see from the above images that our first withdrawal works correctly. Our first withdrawal to account one leaves the contract address with a balance of 11 Ether. We then try to withdraw 10 Ether to our second address. Again, we're able to verify our withdrawal worked correctly as our contract balance is 1 Ether.
 
