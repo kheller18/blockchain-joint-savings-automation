@@ -34,7 +34,6 @@ We're able to see from the above images that our first withdrawal works correctl
 
 At this time, we can verify that all of our functionality is active and working correctly!
 
-
 ---
 
 ## Table of Contents
@@ -49,27 +48,18 @@ At this time, we can verify that all of our functionality is active and working 
   - [6. Deployment](#6-deployment)
   - [7. Contact](#7-contact)
 
-
 ---
 
 ## 1. Installation
 
-  If you would like to clone the repository, type "git clone https://github.com/kheller18/blockchain-joint-savings-automation.git". In the terminal, with the Anaconda dev environment activated, install the following packages and dependencies before running the application. To understand how to install these, refer to the [Usage](#2-usage)
-
+  If you would like to clone the repository, type `git clone https://github.com/kheller18/blockchain-joint-savings-automation.git`. Refer to the [Usage](#2-usage) section for required packages
 
 ---
 
 ## 2. Usage
 
   After cloning the repository locally, you'll need to have the packages listed in [Installation](#1-installation) installed on your machine. To do so, you'll need to activate your conda dev environment and running the following commands:
-
-      ```
-      pip install python-dotenv
-      pip install streamlit
-      pip install web3
-      pip install bip44
-
-      ```
+  * There are no additional packages that need to be installed.
 
   After all of these are installed, please refer to the [Deployment](#6-deployment) section for instructions on how to view or edit the notebook.
 
@@ -99,6 +89,7 @@ At this time, we can verify that all of our functionality is active and working 
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.
   ```
+
 ---
 
 ## 4. Contributing
