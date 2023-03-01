@@ -26,17 +26,8 @@ Blockchain payment app
 
 ## 1. Installation
 
-  If you would like to clone the repository, type "git clone https://github.com/kheller18/crypto-payment-system.git". In the terminal, with the Anaconda dev environment activated, install the following packages and dependencies before running the application. To understand how to install these, refer to the [Usage](#2-usage)
+  If you would like to clone the repository, type "git clone https://github.com/kheller18/blockchain-joint-savings-automation.git". In the terminal, with the Anaconda dev environment activated, install the following packages and dependencies before running the application. To understand how to install these, refer to the [Usage](#2-usage)
 
-  * [dotenv](https://pypi.org/project/python-dotenv/) (1.0.0) - Reads key value pairs in .env
-
-  * [Streamlit](https://streamlit.io/) (1.18.1) - Web interface
-
-  * [Web3](https://web3py.readthedocs.io/en/v5/) (5.17.0) - Python library to interact with Etherium
-
-  * [bip44](https://pypi.org/project/bip44/) (0.1.3) - Creates wallets from mnemonic phrases
-
-  * [Ganache](https://trufflesuite.com/ganache/) (7.7.5) - Blockchain used for testing
 
 
 ---
