@@ -8,7 +8,8 @@
 This project aims to create a Joint Savings Account using Solidity. We first write the contract that holds the funds. We then provide two addresses, the only two addresses that are able to withdraw from the owning account. The testing of this contract is done using [Remix](https://remix-project.org/).
 
 After our contract has been compiled, we test it using the Remix VM. When we inspect our contract and it's functions initially, this is what is looks like.
-![initial contract](Execution_Results/initial_balance.png).
+
+![initial contract](Execution_Results/initial_balance.png)
 
 We can see above that our balance is 0 Ether. Below the balance, we've provided two accounts (our joint accounts) that will be able to withdraw from the contract address.  We can see that our function to set accounts works accordingly by verifying via the logs, which can be seen below.
 ![set accounts](Execution_Results/set_accounts.png)
