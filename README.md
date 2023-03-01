@@ -105,7 +105,7 @@ At this time, we can verify that all of our functionality is active and working 
 ---
 
 ## 6. Deployment
-  + There is currently no live deployment of this app on a common server. To be able to run this app, upload the `joint_savings.sol` file to the [Remix IDE](https://remix-project.org/). Next, compile the contract and deploy it. Upon successfully deployal, you will be able to test the functions of the contract.
+  + There is currently no live deployment of this app on a common server. To be able to run this app, upload the `joint_savings.sol` file to the [Remix IDE](https://remix-project.org/). Next, compile the contract and deploy it. Upon successful deployment, you will be able to test the functions of the contract.
 
 ---
 
