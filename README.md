@@ -7,6 +7,32 @@
 ## Description
 This project aims to create a Joint Savings Account using Solidity. We first write the contract that holds the funds. We then provide two addresses, the only two addresses that are able to withdraw from the owning account. The testing of this contract is done using [Remix](https://remix-project.org/).
 
+After our contract has been compiled, we test it using the Remix VM. When we inspect our contract and it's functions initially, this is what is looks like.
+![initial contract](Execution_Results/initial_balance.png).
+
+We can see above that our balance is 0 Ether. Below the balance, we've provided two accounts (our joint accounts) that will be able to withdraw from the contract address.  We can see that our function to set accounts works accordingly by verifying via the logs, which can be seen below.
+![set accounts](Execution_Results/set_accounts.png)
+
+To test our deposit function, we will make three deposits.
+  * Transaction 1: Deposit 1 Ether as Wei.
+  ![deposit one](Execution_Results/deposit_transaction_1.png)
+  * Transaction 2: Deposit 10 Ether as Wei.
+  ![deposit two](Execution_Results/deposit_transaction_2.png)
+  * Transaction 3: Deposit 5 Ether.
+  ![deposit three](Execution_Results/deposit_transaction_3.png)
+
+We can see from the above images the balance after each deposit. The balance after each of the transactions is 1 Ether, 11 Ether and 16 Ether respectively. Now that our contract address has been deposited 16 Ether in total, we move forward by testing our withdrawal function with our two accounts we've provided. We will do so by making two withdrawals.
+  * Transaction 4: Withdraw 5 Ether as Wei to account one.
+  ![withdrawal one](Execution_Results/withdrawal_1.png)
+  * Transaction 5: Withdraw 10 Ether as Wei to account two.
+  ![withdrawal two](Execution_Results/withdrawal_2.png)
+
+We're able to see from the above images that our first withdrawal works correctly. Our first withdrawal to account one leaves the contract address with a balance of 11 Ether. We then try to withdraw 10 Ether to our second address. Again, we're able to verify our withdrawal worked correctly as our contract balance is 1 Ether.
+
+At this time, we can verify that all of our functionality is active and working correctly!
+
+
+
 
 ---
 
